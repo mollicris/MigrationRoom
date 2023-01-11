@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             lifecycleScope.launch {
                 nameEditText.text.let {
-                    dao.insertStudent(Student(0,it.toString(),emailEditText.text.toString(),courseEditText.text.toString(),"",""))
+                    dao.insertStudent(Student(0,it.toString(),emailEditText.text.toString(),courseEditText.text.toString(),""))
                     nameEditText.setText("")
                     emailEditText.setText("")
                     courseEditText.setText("")

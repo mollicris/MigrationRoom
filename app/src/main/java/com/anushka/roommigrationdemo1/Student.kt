@@ -16,11 +16,8 @@ data class Student(
     @ColumnInfo(name = "student_email")
     var email : String,
 
-    @ColumnInfo(name = "student_course")
-    var course : String,
-
-    @ColumnInfo(name = "student_grade")
-    var grade : String,
+    @ColumnInfo(name = "subject_name")
+    var course : String?,
 
     @ColumnInfo(name = "student_phone")
     var phone : String
